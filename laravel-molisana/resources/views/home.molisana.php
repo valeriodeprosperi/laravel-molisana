@@ -163,19 +163,19 @@
     <main>
         <div class="container">
           <h2>LE LUNGHE</h2>
-          <div class="Pasta">
+          <div class="pasta">
             @foreach ($lunga as $pastalunga)
                 <img class="img-pasta" src="{{$pastalunga["src"]}}" alt="pasta">
             @endforeach
           </div>
           <h2>LE CORTE</h2>
-          <div class="Pasta">
+          <div class="pasta">
             @foreach ($corta as $pastacorta)
               <img class="img-pasta" src="{{$pastacorta["src"]}}" alt="pasta">
             @endforeach
           </div>
           <h2>LE CORTISSIME</h2>
-          <div class="Pasta">
+          <div class="pasta">
             @foreach ($cortissima as $pastacortissima)
                 <img class="img-pasta" src="{{$pastacortissima["src"]}}" alt="pasta">
             @endforeach
