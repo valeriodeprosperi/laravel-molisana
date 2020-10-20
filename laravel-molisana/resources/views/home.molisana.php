@@ -136,3 +136,49 @@
     }
   }
 @endphp
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Molisana</title>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
+    </head>
+    <body>
+    <header>
+      <div class="logo">
+        <img src="logomolisana.png" alt="logo">
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Prodotti</li>
+          <li>News</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div class="container">
+          <h2>LE LUNGHE</h2>
+          <div class="blocchiPasta">
+            @foreach ($lunga as $pastalunga)
+                <img class="img-pasta" src="{{$pastalunga["src"]}}" alt="pasta">
+            @endforeach
+          </div>
+          <h2>LE CORTE</h2>
+          <div class="blocchiPasta">
+            @foreach ($corta as $pastacorta)
+              <img class="img-pasta" src="{{$pastacorta["src"]}}" alt="pasta">
+            @endforeach
+          </div>
+          <h2>LE CORTISSIME</h2>
+          <div class="blocchiPasta">
+            @foreach ($cortissima as $pastacortissima)
+                <img class="img-pasta" src="{{$pastacortissima["src"]}}" alt="pasta">
+            @endforeach
+          </div>
+        </div>
+    </main>
